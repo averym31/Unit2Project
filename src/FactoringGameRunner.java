@@ -14,11 +14,17 @@ public class FactoringGameRunner {
         int points = 0;
         int strikes = 0;
         int strikesForSpecificAttempt = 0;
-        int i = 0;
-        while (strikes <= 5 && i <= 30){
-            FactoringGame.quadGenerator();
+        for (int i = 0; i <= 10; i++){
+            if (strikes == 5) {
+                i = 10;
+            } else {
+                FactoringGame.quadGenerator();
+            }
             StringBuilder userQuad = new StringBuilder("");
-            while (!(userQuad.toString().equals(FactoringGame.quadratic)) && strikes < 5){
+            while (!(userQuad.toString().equals(FactoringGame.quadratic))){
+                if (strikes == 5) {
+                    break;
+                }
                 System.out.print("f = ");
                 userQuad.append(Integer.toString(scanner.nextInt()));
                 System.out.print("q = ");
@@ -31,8 +37,8 @@ public class FactoringGameRunner {
                 userQuad.append(Integer.toString(scanner.nextInt()));
                 //System.out.println(userQuad.toString());
                 if (!(userQuad.toString().equals(FactoringGame.quadratic))){
-                    System.out.println("Wrong answer, please try again.");
                     strikes++;
+                    System.out.println("Wrong answer! You now have " + strikes + " strikes!");
                     strikesForSpecificAttempt++;
                     userQuad.setLength(0);
                 }
@@ -63,6 +69,11 @@ public class FactoringGameRunner {
                 i++;
             }
         }
-        System.out.println("Yipee, you beat the game with " + points + " points!");
+        if (strikes == 5){
+            System.out.println("You lost the game due to having 5 strikes. Your total score is " + points + " points!");
+        }
+        else{
+            System.out.println("Yippee, you beat the game with " + points + " points!");
+        }
     }
 }
