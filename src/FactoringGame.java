@@ -84,7 +84,7 @@ public class FactoringGame {
             t = temp;
         }
         quadratic = f + "" + q + "" + r + "" + s + "" + t;
-        System.out.println(quadratic);
+        //System.out.println(quadratic);
         System.out.println("Factor this equation: " + (f*q*s) + "x^2+" + f*((q*t) + (r*s)) + "x+" + (f*r*t));
     }
 
@@ -146,7 +146,7 @@ public class FactoringGame {
             v = temp;
         }
         cubic = f + "" + q + "" + r + "" + s + "" + t + "" + u + "" + v;
-        System.out.println(cubic);
+        //System.out.println(cubic);
         System.out.println("Factor this equation: " + (f*q*s*u) + "x^3+" + f*(u*((q*t)+(r*s))+(q*s*v)) + "x^2+" + f*((r*t*u) + v*((q*t) + (r*s))) + "x+" + f*r*t*v);
     }
 
