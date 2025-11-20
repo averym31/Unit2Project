@@ -90,12 +90,12 @@ public class FactoringGame {
 
     public static void cubicGenerator(){
         int temp;
-        int q = (int) (Math.random() * 2 + (double) counter /2) + 1;
-        int r = (int) (Math.random() * 2 + (double) counter /2) + 1;
-        int s = (int) (Math.random() * 2 + (double) counter /2) + 1;
-        int t = (int) (Math.random() * 2 + (double) counter /2) + 1;
-        int u = (int) (Math.random() * 2 + (double) counter /2) + 1;
-        int v = (int) (Math.random() * 2 + (double) counter /2) + 1;
+        int q = (int) (Math.random() * 3) + 1;
+        int r = (int) (Math.random() * 3) + 1;
+        int s = (int) (Math.random() * 3) + 1;
+        int t = (int) (Math.random() * 3) + 1;
+        int u = (int) (Math.random() * 3) + 1;
+        int v = (int) (Math.random() * 3) + 1;
         q = q/gcfSearch(q,r);
         r = r/gcfSearch(q,r);
         s = s/gcfSearch(s,t);
