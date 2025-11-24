@@ -14,6 +14,7 @@ public class FactoringGameRunner {
         FactoringGame.factoringGameQuadratic();
         if (FactoringGame.strikes == 5){
             System.out.println("You lost the game due to having 5 strikes. Your total score is " + FactoringGame.points + " points!");
+            System.out.println("Thanks for playing!");
         }
         else{
             System.out.println("Yippee, you beat the game with " + FactoringGame.points + " points!");
