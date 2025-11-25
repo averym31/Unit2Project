@@ -180,6 +180,7 @@ public class FactoringGame {
                 if (!(userQuad.toString().equals(quadratic))){
                     strikes++;
                     System.out.println("Wrong answer! You now have " + strikes + " strikes!");
+                    System.out.println("Your current score is " + points + " points.");
                     strikesForSpecificAttempt++;
                     userQuad.setLength(0);
                 }
@@ -188,26 +189,31 @@ public class FactoringGame {
             if(strikesForSpecificAttempt == 0){
                 System.out.println("Congrats! You earned 10 points for this level.");
                 points = points + 10;
+                System.out.println("Your current score is " + points + " points.");
                 i++;
             }
             else if(strikesForSpecificAttempt == 1){
                 System.out.println("Congrats! You earned 5 points for this level.");
                 points = points + 5;
+                System.out.println("Your current score is " + points + " points.");
                 i++;
             }
             else if(strikesForSpecificAttempt == 2){
                 System.out.println("Congrats! You earned 3 points for this level.");
                 points = points + 3;
+                System.out.println("Your current score is " + points + " points.");
                 i++;
             }
             else if(strikesForSpecificAttempt == 3){
                 System.out.println("Congrats! You earned 2 points for this level.");
                 points = points + 2;
+                System.out.println("Your current score is " + points + " points.");
                 i++;
             }
             else if(strikesForSpecificAttempt == 4){
                 System.out.println("Congrats! You earned 1 point for this level.");
                 points = points + 1;
+                System.out.println("Your current score is " + points + " points.");
                 i++;
             }
         }
@@ -246,6 +252,7 @@ public class FactoringGame {
                 if (!(userCubic.toString().equals(cubic))){
                     strikes++;
                     System.out.println("Wrong answer! You now have " + strikes + " strikes!");
+                    System.out.println("Your current score is " + points + " points.");
                     strikesForSpecificAttempt++;
                     userCubic.setLength(0);
                 }
@@ -254,22 +261,27 @@ public class FactoringGame {
             if (strikesForSpecificAttempt == 0) {
                 System.out.println("Congrats! You earned 10 points for this level.");
                 points = points + 10;
+                System.out.println("Your current score is " + points + " points.");
                 i++;
             } else if (strikesForSpecificAttempt == 1) {
                 System.out.println("Congrats! You earned 5 points for this level.");
                 points = points + 5;
+                System.out.println("Your current score is " + points + " points.");
                 i++;
             } else if (strikesForSpecificAttempt == 2) {
                 System.out.println("Congrats! You earned 3 points for this level.");
                 points = points + 3;
+                System.out.println("Your current score is " + points + " points.");
                 i++;
             } else if (strikesForSpecificAttempt == 3) {
                 System.out.println("Congrats! You earned 2 points for this level.");
                 points = points + 2;
+                System.out.println("Your current score is " + points + " points.");
                 i++;
             } else if (strikesForSpecificAttempt == 4) {
                 System.out.println("Congrats! You earned 1 point for this level.");
                 points = points + 1;
+                System.out.println("Your current score is " + points + " points.");
                 i++;
             }
         }
